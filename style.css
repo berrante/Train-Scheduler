@@ -1,0 +1,59 @@
+/*header*/
+.card .card-image .card-title{
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 5em;
+  color: rgba(000, 000, 000, 0.8);
+  text-align: center;
+  left: 31%;
+  bottom: 10%;
+  padding: 0;
+}
+
+.card {
+  box-shadow: none;
+}
+
+/*table*/
+.row {
+ margin-top: 10px;
+}
+
+.card .card-title {
+  font-size: 22px;
+  color: #5495d0;
+}
+
+th {
+  color: #333;
+}
+
+td {
+  color: #777;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #65aff3;
+}
+
+.input-field input[type=text]:focus {
+   border-bottom: 1px solid #65aff3;
+   box-shadow: 0 1px 0 0 #65aff3;
+ }
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid rgb(212, 134, 202);
+  box-shadow: 0 1px 0 0 rgb(212, 134, 202);
+}
+/*button*/
+.btn {
+  background-color: #5495d0;
+}
+
+.btn:hover {
+  background-color: #98c7f3;
+}
+
+.btn:focus {
+  background-color: #5495d0;
+}

@@ -1,0 +1,122 @@
+<html>
+
+<head>
+  <title>Bridget's Train Scheduler</title>
+
+<!-- Materialize -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+<!-- External Stylesheet -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+<!-- Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+  <div class="row">
+       <div class="col s12">
+         <div class="card">
+           <div class="card-image">
+             <img src="cover.png">
+             <span class="card-title">Train<br>Scheduler</span>
+           </div>
+         </div>
+       </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+        <div class="card">
+          <span class="card-title">Current Schedule</span>
+            <table id="train-table">
+                 <thead>
+                   <tr>
+                       <th>Train Name</th>
+                       <th>Destination</th>
+                       <th>Frequency (Min)</th>
+                       <th>Next Arrival</th>
+                       <th>Minutes Away</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td id="tName">Name</td>
+                     <td id="tDestination">Destination</td>
+                     <td id="tFrequency">Frequency</td>
+                     <td id="tArrival">Arrival</td>
+                     <td id="tMinutes">Destination</td>
+                   </tr>
+                 </tbody>
+               </table>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+        <div class="card">
+          <span class="card-title">Add Train</span>
+            <div class="row">
+               <form class="col s12">
+
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <input id="name-input" type="text" class="validate">
+                     <label class="active">Train Name</label>
+                   </div>
+                </div>
+
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <input id="destination-input" type="text" class="validate">
+                     <label class="active">Destination</label>
+                   </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="time-input" type="text" class="validate">
+                    <label class="active">First Train Time (HH:mm)</label>
+                  </div>
+               </div>
+
+               <div class="row">
+                 <div class="input-field col s12">
+                   <input id="frequency-input" type="text" class="validate">
+                   <label class="active">Frequency (in minutes)</label>
+                 </div>
+              </div>
+
+              <button class="btn waves-effect waves-light" type="submit" name="action" id="addTrain">Submit
+              </button>
+            </form>
+
+          </div>
+        </div>
+    <div>
+  </div>
+</div><!-- main container!! -->
+
+<!-- ===================================================================== -->
+
+<!-- External JavaScript -->
+<script src="app.js"></script>
+
+</body>
+
+</html>
